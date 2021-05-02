@@ -1,6 +1,7 @@
 {% if latest_question_list %}
     <ul>
         <h1>Branch Style<h1>
+                <p>Lo siento ya no puedo con Neovim</p>
     {% for question in latest_question_list %}
         <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
     {% endfor %}
